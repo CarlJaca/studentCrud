@@ -1,0 +1,53 @@
+CREATE DATABASE crud_app;
+
+USE crud_app;
+
+
+
+-- Table for students
+
+CREATE TABLE students (
+
+  id INT AUTO_INCREMENT PRIMARY KEY,
+
+  id_number VARCHAR(50) NOT NULL,
+
+  name VARCHAR(100) NOT NULL,
+
+  age INT NOT NULL,
+
+  course VARCHAR(100) NOT NULL,
+
+  email VARCHAR(100) NOT NULL
+
+);
+
+
+
+-- Table for users (login)
+
+CREATE TABLE users (
+
+  id INT AUTO_INCREMENT PRIMARY KEY,
+
+  username VARCHAR(50) NOT NULL UNIQUE,
+
+  password VARCHAR(255) NOT NULL
+
+);
+
+
+
+-- Default login: admin / 1234
+
+INSERT INTO users (username, password) VALUES ('admin', MD5('1234'));
+
+
+
+
+
+ALTER TABLE students 
+
+ADD COLUMN id_number VARCHAR(50) NOT NULL AFTER id,
+
+ADD COLUMN email VARCHAR(100) NOT NULL AFTER age;
