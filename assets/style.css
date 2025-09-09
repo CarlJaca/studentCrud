@@ -1,0 +1,132 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Container (Card) ===== */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== Headings ===== */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* ===== Forms ===== */
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* ===== Buttons ===== */
+button, .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 6px 4px 0 0;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background: #2980b9;
+}
+
+/* Special buttons */
+.btn-danger {
+    background: #e74c3c;
+}
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+.btn-edit {
+    background: #3498db;
+}
+.btn-edit:hover {
+    background: #2980b9;
+}
+
+/* ===== Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+    background: #fafafa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+th {
+    background: #3498db;
+    color: white;
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+/* ===== Error Message ===== */
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ===== Links ===== */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
